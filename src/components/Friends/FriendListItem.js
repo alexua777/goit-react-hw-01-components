@@ -2,11 +2,11 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Friends.module.css";
 
-function FriendListItem({ friends }) {
+function FriendListItem({ friend }) {
   return (
     <>
-      {friends.map(friend => (
-        <li className={styles.listItem} key={friend.id}>
+     
+       
           <span
             className={friend.isOnline ? styles.isActive : styles.nonActive}
           >
@@ -19,8 +19,8 @@ function FriendListItem({ friends }) {
             width="48"
           />
           <p>{friend.name}</p>
-        </li>
-      ))}
+        
+     
     </>
   );
 }

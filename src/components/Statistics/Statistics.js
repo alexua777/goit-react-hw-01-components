@@ -10,7 +10,7 @@ import styles from './Statistics.module.css';
         {stats.map(stat => (
           <li className={styles.listItem} key={stat.id}>
             <span>{stat.label}</span>
-            <span>{stat.percentage}</span>
+            <span>{stat.percentage}%</span>
           </li>
         ))}
       </ul>
